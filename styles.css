@@ -166,9 +166,10 @@ main {
 
 .btn-hero-primary {
   font-size: 1.25rem;
-  padding: 1.15rem 2.5rem;
+  padding: 1.15rem 9rem;
   box-shadow: 0 12px 32px rgba(255, 95, 109, 0.35);
   font-weight: 700;
+  min-width: 280px;
 }
 
 .hero-badges {
@@ -358,9 +359,9 @@ main {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  flex: 1 1 400px;
-  min-width: 300px;
-  max-width: 600px;
+  flex: 1 1 500px;
+  min-width: 400px;
+  max-width: 750px;
 }
 
 .signup-form input {
