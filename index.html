@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PawPulse Subscription</title>
+    <title>PawPulse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
         <nav class="nav-links" aria-label="Primary">
           <a href="#">Get help</a>
           <a href="#">Monthly themes</a>
-          <button class="btn btn-coral">Get PawPulse</button>
+          <button class="btn btn-coral" data-modal-trigger>Get PawPulse</button>
         </nav>
       </div>
     </header>
@@ -28,22 +28,13 @@
       <section id="hero" class="hero">
         <div class="hero-content">
           <p class="eyebrow">Monthly joy for every pup</p>
-          <h1>Dog joy, delivered every month</h1>
+          <h1>Dog joy, every month</h1>
           <p class="lead">
             A fully customized box of themed toys, treats, and chews that keeps
-            tails wagging. Tell us about your pup and we’ll deliver the fun.
+            tails wagging. Tell us about your pup and we'll deliver the fun.
           </p>
           <div class="hero-ctas">
-            <button class="btn btn-coral">Get PawPulse</button>
-            <button class="btn btn-teal">Give a gift</button>
-          </div>
-          <div class="hero-badges">
-            <div class="badge">
-              <span class="badge-title">100% Happy Guarantee</span>
-              <span class="badge-subtext">
-                If your dog isn’t obsessed, we’ll make it right.
-              </span>
-            </div>
+            <button class="btn btn-coral btn-hero-primary" data-modal-trigger>Get PawPulse</button>
           </div>
         </div>
         <div class="hero-media" aria-hidden="true">
@@ -100,16 +91,9 @@
           <p class="eyebrow">Exclusive treats drop</p>
           <h2>Get first dibs on limited edition themes</h2>
         </div>
-        <form class="signup-form">
-          <label class="sr-only" for="email-input">Email address</label>
-          <input
-            id="email-input"
-            type="email"
-            placeholder="Enter your email"
-            required
-          />
-          <button type="submit" class="btn btn-teal">Sign up</button>
-        </form>
+        <div class="signup-form">
+          <iframe data-tally-src="https://tally.so/embed/2EEoXD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="281" frameborder="0" marginheight="0" marginwidth="0" title="PawPulse"></iframe>
+        </div>
       </section>
 
       <section id="themed-collection" class="themed-collection">
@@ -121,7 +105,7 @@
             treats, and a chew tailored to your dog. Discover new
             adventures—from outer-space missions to barbecue cookouts.
           </p>
-          <button class="btn btn-coral">View themes</button>
+          <button class="btn btn-coral" data-modal-trigger>View themes</button>
         </div>
         <div class="collection-media" aria-hidden="true">
           <img
@@ -140,7 +124,7 @@
             you to make it right. Swap items, tailor future boxes, or chat with
             our concierge team anytime.
           </p>
-          <button class="btn btn-coral">
+          <button class="btn btn-coral" data-modal-trigger>
             <span aria-hidden="true">💬</span> Chat with us now
           </button>
         </div>
@@ -211,6 +195,27 @@
       </div>
     </footer>
 
+    <!-- Modal Popup -->
+    <div class="modal" id="signup-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading" aria-hidden="true">
+      <div class="modal-overlay" data-modal-close></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal" data-modal-close>×</button>
+        <div class="modal-grid">
+          <div class="modal-image">
+            <img src="assets/petparent.png" alt="Pet parent with a dog" />
+          </div>
+          <div class="modal-form-content">
+            <h2 id="modal-heading">Join the PawPulse pack</h2>
+            <p class="modal-subtext">Be the first to hear about launch updates, early offers, and special edition boxes.</p>
+            <div class="modal-form-wrapper">
+              <iframe data-tally-src="https://tally.so/embed/2EEoXD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="281" frameborder="0" marginheight="0" marginwidth="0" title="PawPulse"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
     <script src="scripts.js" defer></script>
   </body>
 </html>
